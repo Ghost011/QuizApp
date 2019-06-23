@@ -1,12 +1,12 @@
 import 'package:project/Utils/questions.dart';
 
-class quiz
+class Quiz
 {
   List<Questions> _questions;
-  int _currentQuestionIndex;
+  int _currentQuestionIndex =-1;
   int _score = 0;
 
-  quiz(this._questions)
+  Quiz(this._questions)
   {
     _questions.shuffle();
   }
